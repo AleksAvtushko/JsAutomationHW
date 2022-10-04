@@ -12,7 +12,7 @@
 + Если входные данные недействительны, вы должны вернуть 0 (поскольку надломы не требуются, если у нас нет шоколада для разделения).
 Ввод всегда будет неотрицательным целым числом. */
 
-function сhocolate(n: number, m: number) {
+function chocolate(n: number, m: number) {
     if (n <= 1) {
         return m - n;
     } else if (n > 1 && m !== 1) {
@@ -24,4 +24,4 @@ function сhocolate(n: number, m: number) {
     }
 }
 
-console.log(сhocolate(2, 4));
+console.log(chocolate(2, 4));
