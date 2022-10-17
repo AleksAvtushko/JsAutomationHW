@@ -12,4 +12,4 @@ const Morenumbers = [
 ];
 
 const MysetCollection = new Set(Morenumbers);
-console.log(MysetCollection);
+console.log(Array.from(Morenumbers));
