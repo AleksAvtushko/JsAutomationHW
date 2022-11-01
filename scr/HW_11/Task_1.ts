@@ -44,19 +44,19 @@ data.then((res: any) => {
     return res.json();
 })
     .then((req: any) => {
-        console.log(req[14]);
+        console.log(req.find((el: any) => el.id === 15));
         return req;
     })
     .then((req: any) => {
-        console.log(req[22]);
+        console.log(req.find((el: any) => el.id === 23));
         return req;
     })
     .then((req: any) => {
-        console.log(req[6]);
+        console.log(req.find((el: any) => el.id === 7));
         return req;
     })
     .then((req: any) => {
-        console.log(req[2]);
+        console.log(req.find((el: any) => el.id === 3));
     })
     .catch((er: any) => {
         console.log("Error", er.json());
