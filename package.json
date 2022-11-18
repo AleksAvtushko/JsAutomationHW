@@ -8,7 +8,8 @@
     "format:code": "prettier --write \"**/.js,.ts\" ",
     "lint": "eslint scr/*.{ts,json}",
     "lint:fix": "eslint scr/*.{ts,json} --quiet --fix",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "Mocha": "mocha --config mocharc.json"
   },
   "repository": {
     "type": "git",
@@ -24,20 +25,27 @@
   "bugs": {
     "url": "https://github.com/AleksAvtushko/JsAutomation/issues"
   },
-
-"homepage": "https://github.com/AleksAvtushko/JsAutomation#readme",
+  "homepage": "https://github.com/AleksAvtushko/JsAutomation#readme",
   "devDependencies": {
+    "@types/chai": "^4.3.4",
+    "@types/jest": "^29.2.3",
+    "@types/mocha": "^10.0.0",
+    "@types/node": "^18.11.9",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
     "@typescript-eslint/parser": "^5.37.0",
     "eslint": "8.22.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
+    "mocha": "^10.1.0",
     "node-fetch": "^3.2.10",
     "prettier": "^2.7.1",
+    "ts-jest": "^29.0.3",
     "ts-node": "^10.9.1",
     "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "chai": "^4.3.7",
+    "jest": "^29.3.1"
   }
-
-
 }
