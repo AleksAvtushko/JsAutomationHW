@@ -38,13 +38,25 @@ describe("Check get LIST USERS by id", () => {
 });
 
 describe("Check post REGISTER - SUCCESSFUL", () => {
+    let data: any;
+    beforeEach(() => {
+        data = {
+            email: "eve.holt@reqres.in",
+            password: "pistol",
+        };
+    });
+
+    afterEach(() => {
+        data = "";
+    });
+
     test("Test#4", async () => {
         let res: any;
         try {
-            res = await superagent.post("https://reqres.in/api/register").set("content-type", "application/json").send({
-                email: "eve.holt@reqres.in",
-                password: "pistol",
-            });
+            res = await superagent
+                .post("https://reqres.in/api/register")
+                .set("content-type", "application/json")
+                .send(data);
         } catch (error: any) {
             throw new Error("Test#4 failed");
         }
@@ -62,7 +74,7 @@ describe("Check post REGISTER - UNSUCCESSFUL", () => {
         } catch (error: any) {
             throw new Error("Test#5 failed");
         }
-        expect(res.status).toBe(400);
+        expect(res.status).toEqual(400);
     });
 });
 
