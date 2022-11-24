@@ -58,7 +58,7 @@ describe("Check post REGISTER - SUCCESSFUL", () => {
                 .set("content-type", "application/json")
                 .send(data);
         } catch (error: any) {
-            throw new Error("Test#4 failed");
+            expect(error.message).toBe("Error Test 5");
         }
         expect(res.status).toBe(200);
     });
@@ -72,9 +72,9 @@ describe("Check post REGISTER - UNSUCCESSFUL", () => {
                 email: "sydney@fife",
             });
         } catch (error: any) {
-            throw new Error("Test#5 failed");
+            expect(error.status).toBe(400);
+            expect(error.response.body.error).toEqual("Missing password");
         }
-        expect(res.status).toEqual(400);
     });
 });
 
@@ -87,7 +87,7 @@ describe("Check post LOGIN - SUCCESSFUL", () => {
                 password: "cityslicka",
             });
         } catch (error: any) {
-            throw new Error("Test#6 failed");
+            expect(error.message).toBe("Bad Request");
         }
         expect(res.status).toBe(200);
     });
@@ -101,9 +101,8 @@ describe("Check post LOGIN - SUCCESSFUL", () => {
                 email: "peter@klaven",
             });
         } catch (error: any) {
-            throw new Error(error);
+            expect(error.status).toBe(400);
         }
-        expect(res.status).toBe(400);
     });
 });
 
@@ -116,6 +115,7 @@ describe("Check DELETE Request", () => {
             throw new Error(error);
         }
         expect(res.status).toBe(204);
+        expect(res.body).toBeDefined();
     });
 });
 
