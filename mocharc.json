@@ -1,5 +1,6 @@
 {
   "extension": ["ts"],
-  "spec": ["scr/HW_2_5/*Task_2.ts"],
-  "require": ["ts-node/register"]
+  "spec": ["scr/HW_2_9/*Selenium.test.ts"],
+  "require": ["ts-node/register"],
+  "timeout": "20000"
 }

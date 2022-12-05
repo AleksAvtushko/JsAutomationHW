@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "run:mocha:scr": "mocha --config mocharc.json",
     "format:code": "prettier --write \"**/.js,.ts\" ",
     "lint": "eslint scr/*.{ts,json}",
     "lint:fix": "eslint scr/*.{ts,json} --quiet --fix",
-    "prepare": "husky install",
-    "Mocha": "mocha --config mocharc.json"
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
