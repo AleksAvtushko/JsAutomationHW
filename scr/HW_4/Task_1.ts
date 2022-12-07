@@ -1,5 +1,5 @@
-let name1 = "Aleksander";
-let surname = "Avtushko";
+const name1 = "Aleksander";
+const surname = "Avtushko";
 
 console.log("Привет" + " " + name1.toLowerCase() + " " + surname.toLowerCase());
 console.log("Привет" + " " + name1.toUpperCase() + " " + surname.toUpperCase());

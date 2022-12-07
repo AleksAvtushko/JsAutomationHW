@@ -1,5 +1,5 @@
-let count = 42;
-let userName = '42';
+const count = 42;
+const userName = "42";
 
 console.log(count.toString());
 console.log(`${count}`);

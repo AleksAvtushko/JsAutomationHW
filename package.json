@@ -7,8 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "run:mocha:scr": "mocha --config mocharc.json",
     "format:code": "prettier --write \"**/.js,.ts\" ",
-    "lint": "eslint scr/*.{ts,json}",
-    "lint:fix": "eslint scr/*.{ts,json} --quiet --fix",
+    "lint": "eslint scr/**/*.{ts,json}",
+    "lint:fix": "eslint scr/**/*.{ts,json} --quiet --fix",
     "prepare": "husky install"
   },
   "repository": {
@@ -32,12 +32,12 @@
     "@types/mocha": "^10.0.0",
     "@types/node": "^18.11.9",
     "@types/superagent": "^4.1.15",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "8.22.0",
+    "@typescript-eslint/eslint-plugin": "^5.45.1",
+    "@typescript-eslint/parser": "^5.45.1",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "husky": "^8.0.0",
+    "lint-staged": "^13.1.0",
     "mocha": "^10.1.0",
     "node-fetch": "^3.2.10",
     "prettier": "^2.7.1",
@@ -52,6 +52,7 @@
     "@types/selenium-webdriver": "^4.1.9",
     "chai": "^4.3.7",
     "chromedriver": "^107.0.3",
+    "eslint": "8.22.0",
     "jest": "^29.3.1",
     "selenium-webdriver": "^4.6.1"
   }

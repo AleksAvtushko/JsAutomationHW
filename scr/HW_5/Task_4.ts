@@ -6,7 +6,7 @@
 
 function getSumNumbers(a: number) {
     let sum = 0;
-    let b = String(a);
+    const b = String(a);
     for (let i = 0; i < b.length; i++) {
         sum += Number(b[i]);
     }

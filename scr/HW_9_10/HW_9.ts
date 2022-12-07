@@ -6,7 +6,7 @@
  значение которого должно подставляться в фразу, которую выводит метод выше. */
 
 class Animal {
-    static animalType: string = "canine family";
+    static animalType = "canine family";
 
     name: string;
 

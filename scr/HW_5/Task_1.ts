@@ -12,5 +12,5 @@ function getSum(a: number) {
     return sum;
 }
 
-let sum = getSum(100);
+const sum = getSum(100);
 console.log(sum);

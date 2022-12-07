@@ -7,7 +7,7 @@
 import { Builder, WebDriver, By, WebElement } from "selenium-webdriver";
 
 async function checkInvalidCredentialsForLogin() {
-    let driver: WebDriver = await new Builder().forBrowser("chrome").build();
+    const driver: WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
     await driver.get("https://the-internet.herokuapp.com/login");
     await driver.findElement(By.css("#username")).sendKeys("AQASroll5241");
@@ -23,7 +23,7 @@ async function checkInvalidCredentialsForLogin() {
 checkInvalidCredentialsForLogin();
 
 async function checkDropDownList() {
-    let driver: WebDriver = await new Builder().forBrowser("chrome").build();
+    const driver: WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
     await driver.get("https://the-internet.herokuapp.com/");
     await driver.findElement(By.css("#content > ul > li:nth-child(11) > a")).click();
@@ -42,7 +42,7 @@ async function checkDropDownList() {
 checkDropDownList();
 
 async function checkFloatingMenu() {
-    let driver: WebDriver = await new Builder().forBrowser("chrome").build();
+    const driver: WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
     await driver.get("https://the-internet.herokuapp.com/");
     await driver.findElement(By.css("#content > ul > li:nth-child(19) > a")).click();
@@ -62,7 +62,7 @@ async function checkFloatingMenu() {
 checkFloatingMenu();
 
 async function checkKeyPresses() {
-    let driver: WebDriver = await new Builder().forBrowser("chrome").build();
+    const driver: WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
     await driver.get("https://the-internet.herokuapp.com/");
     await driver.findElement(By.css("#content > ul > li:nth-child(31) > a")).click();
@@ -77,7 +77,7 @@ async function checkKeyPresses() {
 checkKeyPresses();
 
 async function checkCheckbopxesIsUnchecked() {
-    let driver: WebDriver = await new Builder().forBrowser("chrome").build();
+    const driver: WebDriver = await new Builder().forBrowser("chrome").build();
     await driver.manage().window().maximize();
     await driver.get("https://the-internet.herokuapp.com/");
     await driver.findElement(By.css("#content > ul > li:nth-child(6) > a")).click();

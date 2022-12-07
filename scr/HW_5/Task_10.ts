@@ -16,12 +16,12 @@
 знаком валюты и округлением до двух знаков после запятой.*/
 
 // TODO: Not finished
-function byMyPhone(a: number) {
-    let taxRates = 0.5;
-    let phonePrice = 570;
-    let accessoryPrice = 30;
+/*function byMyPhone(a: number) {
+    const taxRates = 0.5;
+    const phonePrice = 570;
+    const accessoryPrice = 30;
 
-    let commission = (phonePrice + accessoryPrice) * taxRates;
+    const commission = (phonePrice + accessoryPrice) * taxRates;
     let sum = phonePrice + accessoryPrice + commission;
 
     for (sum; sum >= a; sum++) {
@@ -30,4 +30,4 @@ function byMyPhone(a: number) {
     return a > sum;
 }
 
-console.log(byMyPhone(1500));
+console.log(byMyPhone(1500));*/

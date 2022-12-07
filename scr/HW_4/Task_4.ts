@@ -1,8 +1,7 @@
+const anyString1 = "Go to learn type sript.!";
 
-let anyString1 = "Go to learn type sript.!";
-
-if (anyString1.endsWith(".") ) {
-  console.log("Данное предложение закончено");
+if (anyString1.endsWith(".")) {
+    console.log("Данное предложение закончено");
 } else {
-  console.log("В конце предложения не хватает точки");
+    console.log("В конце предложения не хватает точки");
 }

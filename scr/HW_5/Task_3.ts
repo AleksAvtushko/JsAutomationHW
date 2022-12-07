@@ -11,5 +11,5 @@ function trimString(a: string, b: number, c: number) {
     return a.slice(b, c);
 }
 
-let retunr = trimString("Внутри гор только горы", 1, 7);
+const retunr = trimString("Внутри гор только горы", 1, 7);
 console.log(retunr);

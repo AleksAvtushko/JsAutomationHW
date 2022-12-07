@@ -1,8 +1,7 @@
+const anyString = "Takos";
 
-  let anyString = "Takos";
-
-  if (anyString.charAt(4) ) {
+if (anyString.charAt(4)) {
     console.log("All good");
-  } else {
+} else {
     console.log("Вы вышли за границу строки");
-  }
+}

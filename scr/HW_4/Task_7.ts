@@ -1,4 +1,3 @@
+const string = "                я учу typescript!                ";
 
-  let string = '                я учу typescript!                ';
-
-  console.log(string.trim());
+console.log(string.trim());

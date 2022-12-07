@@ -1,5 +1,5 @@
-let a = 1;
-let b = 2;
-let c = "белых медведей";
+const a = 1;
+const b = 2;
+const c = "белых медведей";
 
-console.log(`${a}` + `${b}` + ' ' + c);
+console.log(`${a}` + `${b}` + " " + c);

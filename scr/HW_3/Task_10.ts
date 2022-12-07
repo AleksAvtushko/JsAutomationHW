@@ -1,10 +1,10 @@
 //#### Task 10 💻
 
-let key = true;
-let documents = true;
-let pen = true;
-let apple = true;
-let orange = false;
+const key = true;
+const documents = true;
+const pen = true;
+const apple = true;
+const orange = false;
 const shouldGoToWork = "you can go to work";
 const shouldNotGoToWork = "you can't go to work";
 

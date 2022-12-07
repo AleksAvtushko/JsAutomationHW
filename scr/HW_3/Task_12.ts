@@ -1,6 +1,6 @@
 //#### Task 12 💻
 
-let age = 18;
+const age = 18;
 
 if (age >= 18) {
     console.log("Попей пивка");
