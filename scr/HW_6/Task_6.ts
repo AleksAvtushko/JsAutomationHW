@@ -29,7 +29,7 @@ const myObjForLog: any = {
         if (this.login === login && this.Password === password) {
             return "Добро пожалоВать";
         } else {
-            return "Incorrect login or password";
+            return "Incorrect1 login or password";
         }
     },
 };
