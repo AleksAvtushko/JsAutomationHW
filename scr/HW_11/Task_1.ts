@@ -36,7 +36,7 @@ result();
 
 // TODO:  Promise chaining
 
-const data = new Promise(function (resolve, reject) {
+const data = new Promise(function (resolve) {
     const backandData = fetch(`https://jsonplaceholder.typicode.com/posts`);
     resolve(backandData);
 });
@@ -56,7 +56,7 @@ data.then((res: any) => {
         return req;
     })
     .then((req: any) => {
-        console.log(req.find((el: any) => el.id === 3));
+        console.log(req.find((el: any) => el.id === 4));
     })
     .catch((er: any) => {
         console.log("Error", er.json());
