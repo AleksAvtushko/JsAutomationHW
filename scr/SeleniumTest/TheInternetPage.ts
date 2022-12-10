@@ -1,11 +1,11 @@
 import { HomePage } from "./HomePage";
 import { WebDriver } from "selenium-webdriver";
 
-export class OnlinerPage extends HomePage {
+export class TheInternetPage extends HomePage {
     private readonly url: string;
     constructor(driver: WebDriver) {
         super(driver);
-        this.url = "https://catalog.onliner.by/mobile";
+        this.url = "https://the-internet.herokuapp.com/";
     }
     async visitPage() {
         await this.driver.manage().window().maximize();
