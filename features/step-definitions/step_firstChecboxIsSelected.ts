@@ -8,9 +8,10 @@ Given(/^I open checkbox page$/, async () => {
     await checkBox.open("https://the-internet.herokuapp.com/checkboxes");
 });
 When(/^I find the first CheckBox and check$/, async () => {
-    await checkBox.Checkbox1IsChecked;
+    await checkBox.ClickToFirstCheckBox();
+    await browser.pause(2000);
 });
 
 Then(/^I should see a first checkbox is checked$/, async () => {
-    await expect(checkBox.Checbox1IsChecked).toBeSelected();
+    await expect(checkBox.findCheckBox1).toBeChecked();
 });

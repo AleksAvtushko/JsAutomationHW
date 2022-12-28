@@ -8,10 +8,10 @@ Given(/^I open Dropdown page first$/, async () => {
     await dropDowon.open("https://the-internet.herokuapp.com/dropdown");
 });
 When(/^I click to dropdown$/, async () => {
-    await dropDowon.openDropdownValue1;
+    await dropDowon.openDropdownValue1();
 });
 
 Then(/^I can select option 1 (.*)$/, async (message) => {
-    await expect(dropDowon.openDropdownValue1).toBeExisting();
-    await expect(dropDowon.openDropdownValue1).toHaveTextContaining(message);
+    await expect(dropDowon.dropDownValue).toBeExisting();
+    await expect(dropDowon.dropDownValue).toHaveTextContaining(message);
 });

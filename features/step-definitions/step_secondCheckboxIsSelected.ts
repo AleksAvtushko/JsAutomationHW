@@ -12,5 +12,5 @@ When(/^I find the second CheckBox$/, async () => {
 });
 
 Then(/^I should see a second checkbox is checked$/, async () => {
-    await expect(checkBox.findCheckBox2).toBeSelected();
+    await expect(checkBox.findCheckBox2).toBeChecked();
 });
