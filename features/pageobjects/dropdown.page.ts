@@ -4,7 +4,11 @@ export class Dropdown {
     }
 
     public async openDropdownValue1() {
-        await this.dropDown.isSelected();
+        await this.dropDown.click();
+    }
+
+    public get dropDownValue() {
+        return $('[value="1"]');
     }
 
     public async open(str: string) {
